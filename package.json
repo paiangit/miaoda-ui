@@ -1,0 +1,54 @@
+{
+  "name": "miaoda-ui",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix --cache"
+    ],
+    "*.less": [
+      "stylelint --fix --cache --custom-syntax postcss-less"
+    ],
+    "*.{tsx,ts,js}": [
+      "eslint --fix --cache",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "antd": "^4.19.3",
+    "babel-plugin-import": "^1.13.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "add": "^2.0.6",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lint-staged": "^12.3.7",
+    "pnpm": "^6.32.3",
+    "postcss-less": "^6.0.0",
+    "prettier": "^2.6.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard": "^25.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
